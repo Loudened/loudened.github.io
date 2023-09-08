@@ -1,3 +1,20 @@
-<video src="https://stream.vrcdn.live/live/edseviltwil.live.ts">
-    Your browser does not support the VIDEO tag and/or RTP streams.
+<video id="videostream" controls autoplay="true">
+  <source src="https://stream.vrcdn.live/live/edseviltwil.live.mp4" type="video/mp4">
 </video>
+
+<script>
+  function toggleMute() {
+  var video=document.getElementById("videostream");
+
+  if(video.muted){
+    video.muted = false;
+  } else {
+    debugger;
+    video.muted = true;
+    video.play()
+  }
+}
+$(document).ready(function(){
+  setTimeout(toggleMute,3000);
+})
+</script>
