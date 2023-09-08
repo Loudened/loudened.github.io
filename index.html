@@ -1,21 +1,3 @@
 <video id="videostream" controls autoplay="true">
   <source src="https://stream.vrcdn.live/live/edseviltwil.live.mp4" type="video/mp4">
 </video>
-
-<script>
-  function toggleMute() {
-  var video=document.getElementById("videostream");
-
-  if(video.muted){
-    video.muted = false;
-  } else {
-    debugger;
-    video.muted = true;
-    video.play()
-  }
-}
-document.addEventListener("DOMContentLoaded", function(event) { 
-   setTimeout(toggleMute,3000);
-});
-
-</script>
