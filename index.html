@@ -1,3 +1,21 @@
 <video id="videostream" controls autoplay="true">
   <source src="https://stream.vrcdn.live/live/edseviltwil.live.mp4" type="video/mp4">
 </video>
+
+
+<script> 
+  const video = document.getElementById("videostream");
+  video.webkitRequestFullScreen();
+  video.loop = true;
+  video.play();
+  video.muted = false;
+  
+  function disableMute() {
+      video.muted = false;
+  }
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+   video.play();
+   setInterval(disableMute, 1000)
+  });
+</script>
