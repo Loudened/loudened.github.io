@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <script src="https://cdn.jsdelivr.net/npm/html5_rtsp_player@0.0.19/src/rtsp_player.min.js"></script>
-  </head>
-<body>
-  <video id="vidstream" controls autoplay>
-    <source src="rtspt://stream.vrcdn.live/live/edseviltwil">
- </video>
-</body>
-</html>
+<video id="videostream" controls autoplay="true">
+  <source src="https://stream.vrcdn.live/live/edseviltwil.live.mp4" type="video/mp4">
+</video>
+<style>
+    video {
+        height: 100vh;
+        width: 100%;
+        object-fit: fill; // use "cover" to avoid distortion
+        position: absolute;
+    }
+</style>
